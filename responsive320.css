@@ -1,0 +1,356 @@
+/*====================
+     colors used
+#4c8f96 light green-blue
+#1a1e33 dark green-blue
+#335f64 nav active color
+#6DB9C2 color frames
+========================*/
+/*=============================
+   Common formats
+============================*/
+
+body, html, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e3e3e3;
+    margin-top: 50px;
+}
+@font-face {
+    font-family: arimoBold ;
+    src: url(../fonts/Arimo-Bold.woff)
+}
+@font-face {
+    font-family: chanRegular ;
+    src: url(../fonts/ChangaOne-Regular.woff)
+}
+@font-face {
+    font-family: comRegular ;
+    src: url(../fonts/Comfortaa-Regular.woff)
+}
+
+.myContainer{
+    width: auto;
+    margin: 0 auto;
+    /*height: 3000px;/*test*/
+   /* background-color: #e3e3e3 /*test*/
+}
+*{
+    box-sizing: border-box;
+}
+.clear{
+    clear: both
+}
+/*==========================
+   Logo and nav bar format
+===========================*/
+#logo{
+    width: 100%;
+    height: 180px;
+    background-color: #4c8f96;
+    display: none
+}
+#mainLogo{
+    font-family: arimoBold;
+    color: #fff;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 70px;
+     display: none;
+}
+#mainLogo h1{
+    font-size: 65px;
+    text-transform: uppercase;
+    padding: 30px 0;
+    background-color: #1a1e33;
+    cursor: pointer;
+}
+#navBar{
+    float: left;
+    width: 70%;
+    margin-top: 115px;
+     text-align: right;
+     display: none;
+    /*background-color: black;/*test*/
+}
+#navBar a{
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #1a1e33;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: comRegular;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+#navBar .active{
+    background-color: #335f64;
+}
+#navBar a:hover{
+     background-color: #335f64;
+}
+/*======================
+  responsive nav bar
+======================*/
+.navbar-default {
+    background-color: #4c8f96;
+    border-color: #335f64;
+}
+.navbar-default .navbar-brand {
+    color: #1a1e33;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-brand:hover{
+    color:  #335f64;
+}
+.navbar-default .navbar-toggle {
+    border-color: #1a1e33;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1a1e33;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #335f64;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #335f64;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle:focus{
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color:  #335f64;
+}
+/*==========================
+   PHoto format
+===========================*/
+#photo{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+#photo .white{
+    background-color: #fff;
+}
+#photo #mainPhoto{
+    border: 2px solid #6DB9C2;
+    background-image: url('../images/great-hairstyle.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#photo #mainPhoto p{
+    font-family: chanRegular;
+    font-size: 1.5em;
+    margin-left:0;
+    margin-top: 260px;
+    text-align: center
+}
+/*==========================
+   Gallery format
+===========================*/
+#gallery{
+    margin-top: 50px;
+    height:1350px;
+    position: relative;
+    /*background-color: black;/*test*/
+}
+.mainGallery{
+    margin-top: 20px;
+}
+#gallery .mainGallery .frame {
+    position: absolute;
+}
+#gallery .mainGallery .image{
+    position: absolute;
+     z-index: 1;
+     margin-top: 5px;
+    margin-left: 5px;
+}
+#gallery .mainGallery .image img{
+     transition: opacity .3s ease-in-out;
+}
+#gallery .mainGallery img{
+    cursor: pointer;
+}
+#gallery .mainGallery img:hover{
+   opacity: .6 ;
+}
+.imageWrap{
+    margin-left: 40px;
+}
+#gallery .mainGallery h4{
+    padding-top: 200px;
+    font-size: 18px;
+    font-weight: normal;
+     font-family: arimoBold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center
+}
+#gallery .mainGallery p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*=================================
+   features and hairstyles format
+==================================*/
+#allFeatures{
+    height: 1370px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*background-color: #000;/*test*/
+}
+#allFeatures .wrap{
+    padding-left: 0;
+    padding-right: 0;
+}
+#allFeatures .wrap1{
+    padding-left: 0;
+    padding-right: 0;
+}
+#allFeatures #features{
+    border:5px solid #6DB9C2;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 760px;
+    margin-bottom: 25px;
+    position: relative
+}
+#allFeatures #features:after{
+    content: 'Featured';
+    position: absolute;
+    top:-15px;
+    left: 15px;
+    background-color:#1a1e33;
+    padding:8px 18px;
+    color: #fff;
+    font-family: comRegular;
+    font-size: 22px;
+    letter-spacing: 1.6px;
+}
+#allFeatures #features img{
+    padding-top: 55px;
+    padding-left: 15px;
+}
+#allFeatures #features h4{
+    display: inline-block;
+    padding-left: 20px;
+}
+#allFeatures #features p, .hairstyles p{
+    margin-top: 5px;
+    line-height: 25px;
+    padding: 15px;
+    font-size: 12px;
+}
+.hairstyles{
+    background-color: #4c8f96;
+    height: 320px;
+     border:5px solid #6DB9C2;
+     border-radius: 5px;
+    position: relative;
+}
+.hairstyles:after{
+     content: 'Hairstyle';
+    position: absolute;
+    top:-15px;
+    left: 15px;
+    background-color:#1a1e33;
+    padding:8px 18px;
+    color: #fff;
+    font-family: comRegular;
+    font-size: 22px;
+    letter-spacing: 1.6px;
+}
+
+.hairstyles p{
+    color: #fff;
+     margin-top: 40px;
+}
+.hairstyles p a, .hairstyles span a{
+    color: #fff;
+    text-decoration: underline
+}
+.hairstyles p a:hover, .hairstyles span a:hover{
+    color:  #6DB9C2
+}
+.hairstyles span a{
+   float: right;
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.man{
+    margin-top: 30px;
+     background-color: #4c8f96;
+     height: 235px;
+     border:5px solid #6DB9C2;
+     border-radius: 5px;
+}
+.man img{
+    margin-top: -13px;
+    float: left;
+    height: 245px;
+}
+.man p:first-of-type{
+       margin-top: 40px; 
+}
+.man p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+}
+/*=====================
+   footer format
+======================*/
+footer{
+    height: auto;
+    background-color:#4c8f96 
+}
+#copyright p{
+    color: #fff;
+    line-height: normal;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
+    font-size: 12px;
+    padding-top: 15px;
+}
+#social{
+    background-color: #387A82;
+    width: 200px;
+    padding:15px 20px;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#social a{
+     font-size: 22px;
+    color: #335f64;
+    margin-left: 10px;
+}
+#social a:hover{
+    color:#1a1e33
+}
+    
+    
+    
+    
+    

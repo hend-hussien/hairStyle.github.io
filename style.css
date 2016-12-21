@@ -1,0 +1,304 @@
+/*====================
+     colors used
+#4c8f96 light green-blue
+#1a1e33 dark green-blue
+#335f64 nav active color
+#6DB9C2 color frames
+========================*/
+/*=============================
+   Common formats
+============================*/
+
+body, html, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e3e3e3;
+}
+@font-face {
+    font-family: arimoBold ;
+    src: url(../fonts/Arimo-Bold.woff)
+}
+@font-face {
+    font-family: chanRegular ;
+    src: url(../fonts/ChangaOne-Regular.woff)
+}
+@font-face {
+    font-family: comRegular ;
+    src: url(../fonts/Comfortaa-Regular.woff)
+}
+
+.myContainer{
+    width: 940px;
+    margin: 0 auto;
+    /*height: 3000px;/*test*/
+   /* background-color: #e3e3e3 /*test*/
+}
+*{
+    box-sizing: border-box;
+}
+.clear{
+    clear: both
+}
+
+/*==========================
+   Logo and nav bar format
+===========================*/
+#logo{
+    width: 100%;
+    height: 180px;
+    background-color: #4c8f96;
+}
+#mainLogo{
+    font-family: arimoBold;
+    color: #fff;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 70px
+}
+#mainLogo h1{
+    font-size: 65px;
+    text-transform: uppercase;
+    padding: 30px 0;
+    background-color: #1a1e33;
+    cursor: pointer;
+}
+#navBar{
+    float: left;
+    width: 70%;
+    margin-top: 115px;
+     text-align: right;
+    /*background-color: black;/*test*/
+}
+#navBar a{
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #1a1e33;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: comRegular;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+#navBar .active{
+    background-color: #335f64;
+}
+#navBar a:hover{
+     background-color: #335f64;
+}
+
+/*==========================
+   PHoto format
+===========================*/
+#photo{
+    margin-top: 50px;
+    height: 356px;
+}
+#photo .white{
+    background-color: #fff;
+}
+#photo #mainPhoto{
+    border: 2px solid #6DB9C2;
+    background-image: url('../images/great-hairstyle.jpg');
+    background-repeat: no-repeat;
+    height: 356px;
+}
+#photo #mainPhoto p{
+    font-family: chanRegular;
+    font-size: 3em;
+    margin-left:401px;
+    margin-top: 100px;
+}
+
+/*==========================
+   Gallery format
+===========================*/
+#gallery{
+    margin-top: 50px;
+    height: 370px;
+    position: relative;
+    /*background-color: black;/*test*/
+}
+
+#gallery .mainGallery .frame {
+    position: absolute;
+}
+#gallery .mainGallery .image{
+    position: absolute;
+     z-index: 1;
+     margin-top: 5px;
+    margin-left: 5px;
+}
+#gallery .mainGallery .image img{
+     transition: opacity .3s ease-in-out;
+}
+#gallery .mainGallery img{
+    cursor: pointer;
+}
+#gallery .mainGallery img:hover{
+   opacity: .6 ;
+}
+#gallery .mainGallery h4{
+    padding-top: 210px;
+    font-size: 18px;
+    font-weight: normal;
+     font-family: arimoBold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#gallery .mainGallery p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*=================================
+   features and hairstyles format
+==================================*/
+#allFeatures{
+    height: 680px;
+    margin-top: 50px;
+    /*background-color: #000;/*test*/
+}
+#allFeatures .wrap{
+    padding-left: 0;
+    padding-right: 0;
+}
+#allFeatures #features{
+    border:5px solid #6DB9C2;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 630px;
+    position: relative
+}
+#allFeatures #features:after{
+    content: 'Featured';
+    position: absolute;
+    top:-15px;
+    left: 15px;
+    background-color:#1a1e33;
+    padding:8px 18px;
+    color: #fff;
+    font-family: comRegular;
+    font-size: 22px;
+    letter-spacing: 1.6px;
+}
+#allFeatures #features img{
+    padding-top: 55px;
+    padding-left: 15px;
+}
+#allFeatures #features h4{
+    display: inline-block;
+    padding-left: 20px;
+}
+#allFeatures #features p, .hairstyles p{
+    margin-top: 5px;
+    line-height: 25px;
+    padding: 15px;
+    font-size: 12px;
+}
+.hairstyles{
+    background-color: #4c8f96;
+    height: 270px;
+     border:5px solid #6DB9C2;
+     border-radius: 5px;
+    position: relative
+}
+.hairstyles:after{
+     content: 'Hairstyle';
+    position: absolute;
+    top:-15px;
+    left: 15px;
+    background-color:#1a1e33;
+    padding:8px 18px;
+    color: #fff;
+    font-family: comRegular;
+    font-size: 22px;
+    letter-spacing: 1.6px;
+}
+.hairstyles p{
+    color: #fff;
+     margin-top: 40px;
+}
+.hairstyles p a, .hairstyles span a{
+    color: #fff;
+    text-decoration: underline
+}
+.hairstyles p a:hover, .hairstyles span a:hover{
+    color:  #6DB9C2
+}
+.hairstyles span a{
+   float: right;
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.man{
+    margin-top: 30px;
+     background-color: #4c8f96;
+     height: 235px;
+     border:5px solid #6DB9C2;
+     border-radius: 5px;
+}
+.man img{
+    margin-top: -13px;
+    float: left;
+    height: 245px;
+}
+.man p:first-of-type{
+       margin-top: 50px; 
+}
+.man p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/*=====================
+   footer format
+======================*/
+footer{
+    height: 120px;
+    background-color:#4c8f96 
+}
+#copyright p{
+    color: #fff;
+    line-height: 120px;
+    text-align: right;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
+    font-size: 12px;
+}
+#social{
+    background-color: #387A82;
+    width: 200px;
+    padding:15px 20px;
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+}
+#social a{
+     font-size: 22px;
+    color: #335f64;
+    margin-left: 10px;
+}
+#social a:hover{
+    color:#1a1e33
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
